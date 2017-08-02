@@ -1,0 +1,6 @@
+framework module Pods_Expansive_iOS {
+  umbrella header "Pods-Expansive-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

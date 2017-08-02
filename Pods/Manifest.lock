@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.5.0)
+  - KeychainAccess (3.0.2)
+  - NetworkStack (0.1.5):
+    - Alamofire (~> 4.0)
+    - KeychainAccess (~> 3.0)
+    - RxSwift (~> 3.0)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - RxSwift (3.6.1)
+
+DEPENDENCIES:
+  - NetworkStack
+  - RealmSwift
+  - Reusable
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
+  NetworkStack: 9dcf6c7cfce50111b2ef73963357638baa5fac7d
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+
+PODFILE CHECKSUM: 2f9931c537de15b67a5a6d0a8f693cb0e483fbe2
+
+COCOAPODS: 1.2.1.beta.1
