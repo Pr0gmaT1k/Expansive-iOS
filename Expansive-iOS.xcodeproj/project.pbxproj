@@ -10,7 +10,6 @@
 		0D45F58F5C5B1D4BD9AB7FA8 /* Pods_Expansive_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807A6A849E172AB433ED2F30 /* Pods_Expansive_iOSUITests.framework */; };
 		1724CEB346AEF66D9E03F66A /* Pods_Expansive_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2DC52FCA2CB6893FC7F3D1 /* Pods_Expansive_iOSTests.framework */; };
 		550127801F32642F00F83FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5501277E1F32642F00F83FB8 /* Assets.xcassets */; };
-		550127811F32642F00F83FB8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5501277F1F32642F00F83FB8 /* Info.plist */; };
 		5501278E1F3265A600F83FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550127891F3265A600F83FB8 /* Main.storyboard */; };
 		5501278F1F3265A600F83FB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501278A1F3265A600F83FB8 /* ViewController.swift */; };
 		55ED5F3D1F325B4C0061692B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5F3C1F325B4C0061692B /* AppDelegate.swift */; };
@@ -370,7 +369,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550127811F32642F00F83FB8 /* Info.plist in Resources */,
 				55ED5F471F325B4C0061692B /* LaunchScreen.storyboard in Resources */,
 				550127801F32642F00F83FB8 /* Assets.xcassets in Resources */,
 				5501278E1F3265A600F83FB8 /* Main.storyboard in Resources */,
