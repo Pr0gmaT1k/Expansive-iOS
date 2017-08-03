@@ -7,6 +7,7 @@ Expansive-iOS
 
 `Expansive-iOS` est le premier brouillon d'une belle aventure.
 
+
 ### Initialisation
 
 * Installation de Cocoapods, Homebrew, SwiftLint, SwiftGen et intégration des dépendances
@@ -19,3 +20,8 @@ brew install swiftlint
 brew install swiftgen
 pod install
 ```
+
+
+### License
+
+Expansive-iOS is released under the MIT license.
