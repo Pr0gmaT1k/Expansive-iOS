@@ -12,6 +12,11 @@
 		550127801F32642F00F83FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5501277E1F32642F00F83FB8 /* Assets.xcassets */; };
 		5501278E1F3265A600F83FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550127891F3265A600F83FB8 /* Main.storyboard */; };
 		5501278F1F3265A600F83FB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501278A1F3265A600F83FB8 /* ViewController.swift */; };
+		5501279D1F32FA3E00F83FB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5501279B1F32FA3E00F83FB8 /* Localizable.strings */; };
+		5593E9B61F33062E00FE763F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9B41F33062E00FE763F /* Images.swift */; };
+		5593E9B71F33062E00FE763F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9B51F33062E00FE763F /* Strings.swift */; };
+		5593E9B91F33070E00FE763F /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5593E9B81F33070E00FE763F /* Colors.txt */; };
+		5593E9BB1F33073F00FE763F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9BA1F33073F00FE763F /* Colors.swift */; };
 		55ED5F3D1F325B4C0061692B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5F3C1F325B4C0061692B /* AppDelegate.swift */; };
 		55ED5F471F325B4C0061692B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55ED5F451F325B4C0061692B /* LaunchScreen.storyboard */; };
 		55ED5F521F325B4C0061692B /* Expansive_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5F511F325B4C0061692B /* Expansive_iOSTests.swift */; };
@@ -45,6 +50,11 @@
 		5501277F1F32642F00F83FB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550127891F3265A600F83FB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5501278A1F3265A600F83FB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5501279C1F32FA3E00F83FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
+		5593E9B41F33062E00FE763F /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		5593E9B51F33062E00FE763F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		5593E9B81F33070E00FE763F /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		5593E9BA1F33073F00FE763F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		55ED5F391F325B4C0061692B /* Expansive-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expansive-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ED5F3C1F325B4C0061692B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55ED5F461F325B4C0061692B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 		5501277D1F32642F00F83FB8 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				550127941F32F86500F83FB8 /* Base.lproj */,
 				5501277E1F32642F00F83FB8 /* Assets.xcassets */,
 				5501277F1F32642F00F83FB8 /* Info.plist */,
 			);
@@ -124,6 +135,10 @@
 		550127821F3265A600F83FB8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				5593E9BA1F33073F00FE763F /* Colors.swift */,
+				5593E9B41F33062E00FE763F /* Images.swift */,
+				5593E9B51F33062E00FE763F /* Strings.swift */,
+				5593E9B81F33070E00FE763F /* Colors.txt */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -198,6 +213,14 @@
 			path = WebService;
 			sourceTree = "<group>";
 		};
+		550127941F32F86500F83FB8 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				5501279B1F32FA3E00F83FB8 /* Localizable.strings */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		55ED5F301F325B4C0061692B = {
 			isa = PBXGroup;
 			children = (
@@ -261,12 +284,13 @@
 			buildConfigurationList = 55ED5F611F325B4C0061692B /* Build configuration list for PBXNativeTarget "Expansive-iOS" */;
 			buildPhases = (
 				BF0AF07FC070E10568922F99 /* [CP] Check Pods Manifest.lock */,
+				550127911F326C0100F83FB8 /* SwiftGen */,
+				550127901F32681B00F83FB8 /* SwiftLint */,
 				55ED5F351F325B4C0061692B /* Sources */,
 				55ED5F361F325B4C0061692B /* Frameworks */,
 				55ED5F371F325B4C0061692B /* Resources */,
 				D3A8FC691260343620F8B97F /* [CP] Embed Pods Frameworks */,
 				B475033772B9EA3B44C8883C /* [CP] Copy Pods Resources */,
-				550127901F32681B00F83FB8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -371,7 +395,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55ED5F471F325B4C0061692B /* LaunchScreen.storyboard in Resources */,
+				5501279D1F32FA3E00F83FB8 /* Localizable.strings in Resources */,
 				550127801F32642F00F83FB8 /* Assets.xcassets in Resources */,
+				5593E9B91F33070E00FE763F /* Colors.txt in Resources */,
 				5501278E1F3265A600F83FB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,18 +494,33 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		550127901F32681B00F83FB8 /* ShellScript */ = {
+		550127901F32681B00F83FB8 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint > /dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		550127911F326C0100F83FB8 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\nSRCDIR=\"$PROJECT_DIR/Expansive-iOS\"\nswiftgen images -t swift3 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\nswiftgen strings -t swift3 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\nswiftgen colors -t swift3 \"$SRCDIR/Constants/colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\" -e \"ColorName\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 		};
 		B475033772B9EA3B44C8883C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -549,6 +590,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5501278F1F3265A600F83FB8 /* ViewController.swift in Sources */,
+				5593E9BB1F33073F00FE763F /* Colors.swift in Sources */,
+				5593E9B61F33062E00FE763F /* Images.swift in Sources */,
+				5593E9B71F33062E00FE763F /* Strings.swift in Sources */,
 				55ED5F3D1F325B4C0061692B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +629,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5501279B1F32FA3E00F83FB8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5501279C1F32FA3E00F83FB8 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		55ED5F451F325B4C0061692B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
