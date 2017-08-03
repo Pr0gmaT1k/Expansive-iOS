@@ -9,22 +9,13 @@ Expansive-iOS
 
 ### Initialisation
 
-* Installation de Cocoapods
+* Installation de Cocoapods, Homebrew, SwiftLint, SwiftGen et intégration des dépendances
 ```ruby
 sudo gem install cocoapods
-```
-
-* Installation de Homebrew
-```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-* Installation de SwiftLint
-```
+git clone https://github.com/Pr0gmaT1k/Expansive-iOS
+cd Expansive-iOS
 brew install swiftlint
-```
-
-* Installation de SwiftGen
-```
 brew install swiftgen
+pod install
 ```
