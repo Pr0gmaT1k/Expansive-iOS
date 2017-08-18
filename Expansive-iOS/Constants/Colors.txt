@@ -1,1 +1,2 @@
-Test: #FFFFFF
+MainPurple: #d500f9
+PageMenuPurple: #ab47bc

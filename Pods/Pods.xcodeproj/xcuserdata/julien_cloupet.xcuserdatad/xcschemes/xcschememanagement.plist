@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PageMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Expansive-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,11 +62,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06B2DE15E326BAEAD1A172F9180B1FEA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1DE1238ECB0F1AE110582CB40F3414F4</key>
 		<dict>
 			<key>primary</key>
@@ -72,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58592C938A22FD9F760D1D2F5B0F1749</key>
+		<key>3A597B64706F12B3AA01156F44D252C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4AF3C7B1BF3362081BC1D800648407D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>865CDA3C289C9FD1F2E78E668F4C1292</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4B13A7C6C5A50741AC628925177FC81</key>
+		<key>978A447F57E812AEE5D676FF361F1416</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E66A3FE14C28D99D2DBFDC696DB0CD21</key>
+		<key>DFF3C63D11E3331D242AE00F8DEF4BE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

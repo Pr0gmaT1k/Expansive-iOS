@@ -7,8 +7,16 @@ import Foundation
 
 // swiftlint:disable type_body_length
 enum L10n {
-  /// test
-  case testStrings
+  /// EXPANSIVE
+  case navbarMainTitle
+  /// ANALYSES
+  case pageMenuAnalyses
+  /// AILLEURS
+  case pageMenuElsewhere
+  /// GUIDE PRATIQUE
+  case pageMenuGuide
+  /// INFOS LOCALES
+  case pageMenuLocalInfos
 }
 // swiftlint:enable type_body_length
 
@@ -17,8 +25,16 @@ extension L10n: CustomStringConvertible {
 
   var string: String {
     switch self {
-      case .testStrings:
-        return L10n.tr(key: "test_strings")
+      case .navbarMainTitle:
+        return L10n.tr(key: "navbar_main_title")
+      case .pageMenuAnalyses:
+        return L10n.tr(key: "page_menu_analyses")
+      case .pageMenuElsewhere:
+        return L10n.tr(key: "page_menu_elsewhere")
+      case .pageMenuGuide:
+        return L10n.tr(key: "page_menu_guide")
+      case .pageMenuLocalInfos:
+        return L10n.tr(key: "page_menu_local_infos")
     }
   }
 

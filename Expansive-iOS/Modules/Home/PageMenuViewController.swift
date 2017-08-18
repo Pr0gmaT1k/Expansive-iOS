@@ -1,0 +1,74 @@
+//
+//  ViewController.swift
+//  Expansive-iOS
+//
+//  Created by Pr0gmaT1k on 02/08/2017.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+
+import UIKit
+import PageMenu
+import Reusable
+
+class PageMenuViewController: UIViewController {
+  
+  // Mark:- Properties
+  var pageMenu: CAPSPageMenu?
+  var controllerArray: [UIViewController] = []
+  
+  // Mark:- Public func
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.title = L10n.navbarMainTitle.string
+    
+    let mainNewsVC = StoryboardScene.Main.instantiateMainNewsViewController()
+    mainNewsVC.title = L10n.pageMenuLocalInfos.string
+    
+    let analysesVC = StoryboardScene.Main.instantiateNewsViewController()
+    analysesVC.title = L10n.pageMenuAnalyses.string
+    
+    let elseWhereVC = StoryboardScene.Main.instantiateNewsViewController()
+    elseWhereVC.title = L10n.pageMenuElsewhere.string
+    elseWhereVC.view.backgroundColor = UIColor.red
+    
+    let guidesVC = StoryboardScene.Main.instantiateNewsViewController()
+    guidesVC.title = L10n.pageMenuGuide.string
+    guidesVC.view.backgroundColor = UIColor.darkGray
+    
+    controllerArray.append(contentsOf: [mainNewsVC, analysesVC, elseWhereVC, guidesVC])
+    
+    // Page menu options
+    let parameters: [CAPSPageMenuOption] = [
+      .menuItemWidthBasedOnTitleTextWidth(true),
+      .scrollMenuBackgroundColor(UIColor(named: .pageMenuPurple)),
+      .viewBackgroundColor(UIColor(named: .pageMenuPurple)),
+      .unselectedMenuItemLabelColor(.white),
+      .selectionIndicatorHeight(1)
+    ]
+    
+    // Initialize page menu with controller array, frame, and optional parameters
+    let frame = self.view.bounds
+    pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height), pageMenuOptions: parameters)
+    
+    // Lastly add page menu as subview of base view controller view
+    // or use pageMenu controller in you view hierachy as desired
+    guard let pageMenu = pageMenu else { return }
+    self.view.addSubview(pageMenu.view)
+  }
+}

@@ -5,6 +5,7 @@ PODS:
     - Alamofire (~> 4.0)
     - KeychainAccess (~> 3.0)
     - RxSwift (~> 3.0)
+  - PageMenu (2.0.0)
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
   - Realm/Headers (2.8.3)
@@ -19,6 +20,7 @@ PODS:
 
 DEPENDENCIES:
   - NetworkStack
+  - PageMenu
   - RealmSwift
   - Reusable
 
@@ -26,11 +28,12 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   NetworkStack: 9dcf6c7cfce50111b2ef73963357638baa5fac7d
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
 
-PODFILE CHECKSUM: 2f9931c537de15b67a5a6d0a8f693cb0e483fbe2
+PODFILE CHECKSUM: 579a57493633ab9e7bceeafc2baec2c62b434a8d
 
 COCOAPODS: 1.2.1.beta.1

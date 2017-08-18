@@ -11,12 +11,15 @@
 		1724CEB346AEF66D9E03F66A /* Pods_Expansive_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2DC52FCA2CB6893FC7F3D1 /* Pods_Expansive_iOSTests.framework */; };
 		550127801F32642F00F83FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5501277E1F32642F00F83FB8 /* Assets.xcassets */; };
 		5501278E1F3265A600F83FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550127891F3265A600F83FB8 /* Main.storyboard */; };
-		5501278F1F3265A600F83FB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501278A1F3265A600F83FB8 /* ViewController.swift */; };
+		5501278F1F3265A600F83FB8 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501278A1F3265A600F83FB8 /* PageMenuViewController.swift */; };
 		5501279D1F32FA3E00F83FB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5501279B1F32FA3E00F83FB8 /* Localizable.strings */; };
+		553D21ED1F34FCA7008F709F /* MainNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D21EC1F34FCA7008F709F /* MainNewsViewController.swift */; };
+		553D21EF1F34FCCC008F709F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553D21EE1F34FCCC008F709F /* NewsViewController.swift */; };
 		5593E9B61F33062E00FE763F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9B41F33062E00FE763F /* Images.swift */; };
 		5593E9B71F33062E00FE763F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9B51F33062E00FE763F /* Strings.swift */; };
 		5593E9B91F33070E00FE763F /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5593E9B81F33070E00FE763F /* Colors.txt */; };
 		5593E9BB1F33073F00FE763F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593E9BA1F33073F00FE763F /* Colors.swift */; };
+		55D98AB31F4764A500AD4D77 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D98AB21F4764A500AD4D77 /* Storyboards.swift */; };
 		55ED5F3D1F325B4C0061692B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5F3C1F325B4C0061692B /* AppDelegate.swift */; };
 		55ED5F471F325B4C0061692B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55ED5F451F325B4C0061692B /* LaunchScreen.storyboard */; };
 		55ED5F521F325B4C0061692B /* Expansive_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5F511F325B4C0061692B /* Expansive_iOSTests.swift */; };
@@ -49,12 +52,15 @@
 		5501277E1F32642F00F83FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5501277F1F32642F00F83FB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550127891F3265A600F83FB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5501278A1F3265A600F83FB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5501278A1F3265A600F83FB8 /* PageMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
 		5501279C1F32FA3E00F83FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
+		553D21EC1F34FCA7008F709F /* MainNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNewsViewController.swift; sourceTree = "<group>"; };
+		553D21EE1F34FCCC008F709F /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		5593E9B41F33062E00FE763F /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		5593E9B51F33062E00FE763F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		5593E9B81F33070E00FE763F /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
 		5593E9BA1F33073F00FE763F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		55D98AB21F4764A500AD4D77 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		55ED5F391F325B4C0061692B /* Expansive-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expansive-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ED5F3C1F325B4C0061692B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55ED5F461F325B4C0061692B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		550127821F3265A600F83FB8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				55D98AB21F4764A500AD4D77 /* Storyboards.swift */,
 				5593E9BA1F33073F00FE763F /* Colors.swift */,
 				5593E9B41F33062E00FE763F /* Images.swift */,
 				5593E9B51F33062E00FE763F /* Strings.swift */,
@@ -185,7 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				550127891F3265A600F83FB8 /* Main.storyboard */,
-				5501278A1F3265A600F83FB8 /* ViewController.swift */,
+				5501278A1F3265A600F83FB8 /* PageMenuViewController.swift */,
+				553D21EC1F34FCA7008F709F /* MainNewsViewController.swift */,
+				553D21EE1F34FCCC008F709F /* NewsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -520,7 +529,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\nSRCDIR=\"$PROJECT_DIR/Expansive-iOS\"\nswiftgen images -t swift3 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\nswiftgen strings -t swift3 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\nswiftgen colors -t swift3 \"$SRCDIR/Constants/colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\" -e \"ColorName\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+			shellScript = "if which swiftgen >/dev/null; then\nSRCDIR=\"$PROJECT_DIR/Expansive-iOS\"\nswiftgen storyboards -t swift3 \"$SRCDIR\" --output \"$SRCDIR/Constants/Storyboards.swift\"\nswiftgen images -t swift3 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\nswiftgen strings -t swift3 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\nswiftgen colors -t swift3 \"$SRCDIR/Constants/colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\" -e \"ColorName\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 		};
 		B475033772B9EA3B44C8883C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -589,9 +598,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5501278F1F3265A600F83FB8 /* ViewController.swift in Sources */,
+				55D98AB31F4764A500AD4D77 /* Storyboards.swift in Sources */,
+				5501278F1F3265A600F83FB8 /* PageMenuViewController.swift in Sources */,
 				5593E9BB1F33073F00FE763F /* Colors.swift in Sources */,
+				553D21ED1F34FCA7008F709F /* MainNewsViewController.swift in Sources */,
 				5593E9B61F33062E00FE763F /* Images.swift in Sources */,
+				553D21EF1F34FCCC008F709F /* NewsViewController.swift in Sources */,
 				5593E9B71F33062E00FE763F /* Strings.swift in Sources */,
 				55ED5F3D1F325B4C0061692B /* AppDelegate.swift in Sources */,
 			);

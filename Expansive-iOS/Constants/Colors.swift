@@ -26,14 +26,19 @@ extension Color {
 
 // swiftlint:disable type_body_length
 enum ColorName {
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
-  /// Alpha: 100% <br/> (0xffffffff)
-  case test
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d500f9"></span>
+  /// Alpha: 100% <br/> (0xd500f9ff)
+  case mainPurple
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ab47bc"></span>
+  /// Alpha: 100% <br/> (0xab47bcff)
+  case pageMenuPurple
 
   var rgbaValue: UInt32 {
     switch self {
-    case .test:
-      return 0xffffffff
+    case .mainPurple:
+      return 0xd500f9ff
+    case .pageMenuPurple:
+      return 0xab47bcff
     }
   }
 

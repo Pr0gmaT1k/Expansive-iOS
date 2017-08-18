@@ -6,6 +6,7 @@ target 'Expansive-iOS' do
   pod 'NetworkStack'
   pod 'RealmSwift'
   pod 'Reusable'
+  pod 'PageMenu'
 
   target 'Expansive-iOSTests' do
     inherit! :search_paths

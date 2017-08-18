@@ -1,9 +1,8 @@
 //
-//  ViewController.swift
+//  MainNewsViewController.swift
 //  Expansive-iOS
 //
-//  Created by Pr0gmaT1k on 02/08/2017.
-//  Copyright © 2017 mutu. All rights reserved.
+//  Created by Pr0gmaT1K on 04/08/2017.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,13 +22,13 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
 import UIKit
+import Reusable
 
-class ViewController: UIViewController {
+class MainNewsViewController: UIViewController, StoryboardBased {
   
+  // Mark:- Public func
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
 }
