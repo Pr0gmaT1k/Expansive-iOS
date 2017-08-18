@@ -7,6 +7,7 @@ target 'Expansive-iOS' do
   pod 'RealmSwift'
   pod 'Reusable'
   pod 'PageMenu'
+  pod 'SlideMenuControllerSwift'
 
   target 'Expansive-iOSTests' do
     inherit! :search_paths

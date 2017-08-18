@@ -25,7 +25,7 @@
 import UIKit
 import Reusable
 
-class MainNewsViewController: UIViewController, StoryboardBased {
+final class MainNewsViewController: UIViewController, StoryboardBased {
   
   // Mark:- Public func
   override func viewDidLoad() {

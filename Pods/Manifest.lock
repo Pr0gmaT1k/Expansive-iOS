@@ -17,12 +17,14 @@ PODS:
   - Reusable/Storyboard (4.0.0)
   - Reusable/View (4.0.0)
   - RxSwift (3.6.1)
+  - SlideMenuControllerSwift (3.0.1)
 
 DEPENDENCIES:
   - NetworkStack
   - PageMenu
   - RealmSwift
   - Reusable
+  - SlideMenuControllerSwift
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
@@ -33,7 +35,8 @@ SPEC CHECKSUMS:
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
 
-PODFILE CHECKSUM: 579a57493633ab9e7bceeafc2baec2c62b434a8d
+PODFILE CHECKSUM: 10dccd7c438d2afc4f8fb303a59e59ac513ab569
 
 COCOAPODS: 1.2.1.beta.1
