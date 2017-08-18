@@ -26,11 +26,11 @@ import UIKit
 import PageMenu
 import Reusable
 
-class PageMenuViewController: UIViewController {
+final class PageMenuViewController: UIViewController {
   
   // Mark:- Properties
-  var pageMenu: CAPSPageMenu?
-  var controllerArray: [UIViewController] = []
+  private var pageMenu: CAPSPageMenu?
+  private var controllerArray: [UIViewController] = []
   
   // Mark:- Public func
   override func viewDidLoad() {
@@ -62,12 +62,9 @@ class PageMenuViewController: UIViewController {
       .selectionIndicatorHeight(1)
     ]
     
-    // Initialize page menu with controller array, frame, and optional parameters
+    // Init and add menu
     let frame = self.view.bounds
     pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height), pageMenuOptions: parameters)
-    
-    // Lastly add page menu as subview of base view controller view
-    // or use pageMenu controller in you view hierachy as desired
     guard let pageMenu = pageMenu else { return }
     self.view.addSubview(pageMenu.view)
   }
