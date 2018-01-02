@@ -1,12 +1,15 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
-#if os(iOS) || os(tvOS) || os(watchOS)
-  import UIKit.UIColor
-  typealias Color = UIColor
-#elseif os(OSX)
+#if os(OSX)
   import AppKit.NSColor
   typealias Color = NSColor
+#elseif os(iOS) || os(tvOS) || os(watchOS)
+  import UIKit.UIColor
+  typealias Color = UIColor
 #endif
+
+// swiftlint:disable superfluous_disable_command
+// swiftlint:disable file_length
 
 // swiftlint:disable operator_usage_whitespace
 extension Color {
@@ -21,37 +24,22 @@ extension Color {
 }
 // swiftlint:enable operator_usage_whitespace
 
-// swiftlint:disable file_length
-// swiftlint:disable line_length
+// swiftlint:disable identifier_name line_length type_body_length
+struct ColorName {
+  let rgbaValue: UInt32
+  var color: Color { return Color(named: self) }
 
-// swiftlint:disable type_body_length
-enum ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d500f9"></span>
   /// Alpha: 100% <br/> (0xd500f9ff)
-  case mainPurple
+  static let mainPurple = ColorName(rgbaValue: 0xd500f9ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ab47bc"></span>
   /// Alpha: 100% <br/> (0xab47bcff)
-  case pageMenuPurple
-
-  var rgbaValue: UInt32 {
-    switch self {
-    case .mainPurple:
-      return 0xd500f9ff
-    case .pageMenuPurple:
-      return 0xab47bcff
-    }
-  }
-
-  var color: Color {
-    return Color(named: self)
-  }
+  static let pageMenuPurple = ColorName(rgbaValue: 0xab47bcff)
 }
-// swiftlint:enable type_body_length
+// swiftlint:enable identifier_name line_length type_body_length
 
 extension Color {
-  convenience init(named name: ColorName) {
-    self.init(rgbaValue: name.rgbaValue)
+  convenience init(named color: ColorName) {
+    self.init(rgbaValue: color.rgbaValue)
   }
 }
-// swiftlint:enable file_length
-// swiftlint:enable line_length

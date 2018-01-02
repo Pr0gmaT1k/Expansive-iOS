@@ -37,17 +37,17 @@ final class PageMenuViewController: UIViewController {
     super.viewDidLoad()
     self.title = L10n.navbarMainTitle.string
     
-    let mainNewsVC = StoryboardScene.Main.instantiateMainNewsViewController()
+    let mainNewsVC = StoryboardScene.Main.mainNewsViewController.instantiate()
     mainNewsVC.title = L10n.pageMenuLocalInfos.string
     
-    let analysesVC = StoryboardScene.Main.instantiateNewsViewController()
+    let analysesVC = StoryboardScene.Main.newsViewController.instantiate()
     analysesVC.title = L10n.pageMenuAnalyses.string
     
-    let elseWhereVC = StoryboardScene.Main.instantiateNewsViewController()
+    let elseWhereVC = StoryboardScene.Main.newsViewController.instantiate()
     elseWhereVC.title = L10n.pageMenuElsewhere.string
     elseWhereVC.view.backgroundColor = UIColor.red
     
-    let guidesVC = StoryboardScene.Main.instantiateNewsViewController()
+    let guidesVC = StoryboardScene.Main.newsViewController.instantiate()
     guidesVC.title = L10n.pageMenuGuide.string
     guidesVC.view.backgroundColor = UIColor.darkGray
     

@@ -1,81 +1,73 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
+// swiftlint:disable sorted_imports
 import Foundation
 import UIKit
 
+// swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
-// swiftlint:disable line_length
-// swiftlint:disable type_body_length
 
-protocol StoryboardSceneType {
+protocol StoryboardType {
   static var storyboardName: String { get }
 }
 
-extension StoryboardSceneType {
-  static func storyboard() -> UIStoryboard {
+extension StoryboardType {
+  static var storyboard: UIStoryboard {
     return UIStoryboard(name: self.storyboardName, bundle: Bundle(for: BundleToken.self))
   }
+}
 
-  static func initialViewController() -> UIViewController {
-    guard let vc = storyboard().instantiateInitialViewController() else {
-      fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+struct SceneType<T: Any> {
+  let storyboard: StoryboardType.Type
+  let identifier: String
+
+  func instantiate() -> T {
+    guard let controller = storyboard.storyboard.instantiateViewController(withIdentifier: identifier) as? T else {
+      fatalError("ViewController '\(identifier)' is not of the expected class \(T.self).")
     }
-    return vc
+    return controller
   }
 }
 
-extension StoryboardSceneType where Self: RawRepresentable, Self.RawValue == String {
-  func viewController() -> UIViewController {
-    return Self.storyboard().instantiateViewController(withIdentifier: self.rawValue)
-  }
-  static func viewController(identifier: Self) -> UIViewController {
-    return identifier.viewController()
+struct InitialSceneType<T: Any> {
+  let storyboard: StoryboardType.Type
+
+  func instantiate() -> T {
+    guard let controller = storyboard.storyboard.instantiateInitialViewController() as? T else {
+      fatalError("ViewController is not of the expected class \(T.self).")
+    }
+    return controller
   }
 }
 
-protocol StoryboardSegueType: RawRepresentable { }
+protocol SegueType: RawRepresentable { }
 
 extension UIViewController {
-  func perform<S: StoryboardSegueType>(segue: S, sender: Any? = nil) where S.RawValue == String {
+  func perform<S: SegueType>(segue: S, sender: Any? = nil) where S.RawValue == String {
     performSegue(withIdentifier: segue.rawValue, sender: sender)
   }
 }
 
+// swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 enum StoryboardScene {
-  enum LaunchScreen: StoryboardSceneType {
+  enum LaunchScreen: StoryboardType {
     static let storyboardName = "LaunchScreen"
+
+    static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
   }
-  enum Main: String, StoryboardSceneType {
+  enum Main: StoryboardType {
     static let storyboardName = "Main"
 
-    static func initialViewController() -> UINavigationController {
-      guard let vc = storyboard().instantiateInitialViewController() as? UINavigationController else {
-        fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
-      }
-      return vc
-    }
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: Main.self)
 
-    case mainNewsViewControllerScene = "MainNewsViewController"
-    static func instantiateMainNewsViewController() -> Expansive_iOS.MainNewsViewController {
-      guard let vc = StoryboardScene.Main.mainNewsViewControllerScene.viewController() as? Expansive_iOS.MainNewsViewController
-      else {
-        fatalError("ViewController 'MainNewsViewController' is not of the expected class Expansive_iOS.MainNewsViewController.")
-      }
-      return vc
-    }
+    static let mainNewsViewController = SceneType<Expansive_iOS.MainNewsViewController>(storyboard: Main.self, identifier: "MainNewsViewController")
 
-    case newsViewControllerScene = "NewsViewController"
-    static func instantiateNewsViewController() -> Expansive_iOS.NewsViewController {
-      guard let vc = StoryboardScene.Main.newsViewControllerScene.viewController() as? Expansive_iOS.NewsViewController
-      else {
-        fatalError("ViewController 'NewsViewController' is not of the expected class Expansive_iOS.NewsViewController.")
-      }
-      return vc
-    }
+    static let newsViewController = SceneType<Expansive_iOS.NewsViewController>(storyboard: Main.self, identifier: "NewsViewController")
   }
 }
 
 enum StoryboardSegue {
 }
+// swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 
 private final class BundleToken {}
